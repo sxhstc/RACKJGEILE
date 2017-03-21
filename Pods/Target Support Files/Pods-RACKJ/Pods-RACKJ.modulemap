@@ -1,0 +1,6 @@
+framework module Pods_RACKJ {
+  umbrella header "Pods-RACKJ-umbrella.h"
+
+  export *
+  module * { export * }
+}

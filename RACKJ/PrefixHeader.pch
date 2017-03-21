@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  RACKJ
+//
+//  Created by hua on 2016/12/27.
+//  Copyright © 2016年 hua. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import "AppDelegate.h"
+
+#import "UtilsMacro.h"
+#import "AppMacro.h"
+#import "TimeMacro.h"
+#import "CoreToolCenter.h"
+#import "NSData+Extend.h"
+#import "NSDate+Extend.h"
+#import "NSString+Extend.h"
+
+
+#import "MJExtension.h"
+#import "LKDBHelper.h"
+#import "PINCache.h"
+#import "IQKeyboardManager.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <MJRefresh/MJRefresh.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import <AFNetworking/AFNetworking.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+
+//#define MAS_SHORTHAND_GLOBALS  //使用全局宏定义，可以使equalTo等效于mas_equalTo
+//#define MAS_SHORTHAND          //使用全局宏定义, 可以在调用masonry方法的时候不使用mas_前缀
+#import <Masonry/Masonry.h>
+
+#endif
+
+#endif /* PrefixHeader_pch */
